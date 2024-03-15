@@ -2,5 +2,5 @@
   "tasks": {
     "dev": "deno run --watch --allow-net=:4488 main.ts"
   },
-  "lock" : false
+  "lock": false
 }

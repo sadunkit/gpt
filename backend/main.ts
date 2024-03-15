@@ -15,12 +15,12 @@ router.get("/wss", (ctx) => {
   };
 
   ws.onmessage = (m) => {
-	if (m.data === "ping") {
-		ws.send("pong");
-		return;
-	} else {
-		console.log("Got message from client: ", m.data);
-	}
+    if (m.data === "ping") {
+      ws.send("pong");
+      return;
+    } else {
+      console.log("Got message from client: ", m.data);
+    }
   };
 
   ws.onclose = () => console.log("Disconnected from client");
