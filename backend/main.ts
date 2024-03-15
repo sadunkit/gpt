@@ -23,10 +23,10 @@ router.get("/wss", (ctx) => {
 	}
   };
 
-  ws.onclose = () => console.log("Disconncted from client");
+  ws.onclose = () => console.log("Disconnected from client");
 });
 
 app.use(router.routes());
 app.use(router.allowedMethods());
 
-app.listen();
+app.listen({ port: 4488 });

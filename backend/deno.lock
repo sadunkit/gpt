@@ -1,5 +1,5 @@
 {
-  "version": "3",
+  "version": "2",
   "packages": {
     "specifiers": {
       "jsr:@oak/commons@0.7": "jsr:@oak/commons@0.7.0",
